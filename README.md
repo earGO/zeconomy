@@ -1,7 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
-###How to run
+### How to run
 
 1. Install all dependencies using `yarn` in root folder
 2. Use `yarn start` script to run application. It will be available on local port 3000
@@ -13,7 +13,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 has string typed in input will be highlighted with yellow. 
 
 ### On tech stack
-* redux storage to be able get what I need where I needed. 
+* redux to get what I need where I needed. Used hooks for fancier code. 
 * throttle-debounce to do some delay between user's input and actual highlighting of a filenames. 
 * MaterialUI icons to display difference between folders and files. 
 * styled-components for a small amount (I'm a fan of a styles-in-JS) of markup just to make things more readable. 
