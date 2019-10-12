@@ -1,68 +1,27 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+###How to run
 
-### `yarn start`
+1. Install all dependencies using `yarn` in root folder
+2. Use `yarn start` script to run application. It will be available on local port 3000
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### How to use
+1. Choose a json file with the file structure. 
+2. The file will be parsed and it's structure will be displayed
+3. When file structure will be displayed, you'll also see a search input. Type anything. All files, who's name 
+has string typed in input will be highlighted with yellow. 
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### On tech stack
+* redux storage to be able get what I need where I needed. 
+* throttle-debounce to do some delay between user's input and actual highlighting of a filenames. 
+* MaterialUI icons to display difference between folders and files. 
+* styled-components for a small amount (I'm a fan of a styles-in-JS) of markup just to make things more readable. 
 
-### `yarn test`
+Since I've had really tough week, I've tried to make structure readable without being too hard on a design.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* logger middleware for debugging
+* prettier for formatting
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+There will be warning in console regarding missing `key` prop in OneLevel component. That's I've used fragment syntax 
+on a line 55, to get quick result with the markup. Those kinda don't work with a props :)
